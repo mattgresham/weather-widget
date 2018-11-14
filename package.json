@@ -6,7 +6,43 @@
   "author": "Matt Gresham",
   "license": "WTFPL",
   "eslintConfig": {
-    "extends": "react-app"
+    "globals": {
+      "APP_CONFIG": false
+    },
+    "extends": [
+      "react-app",
+      "airbnb",
+      "plugin:prettier/recommended",
+      "prettier/flowtype",
+      "prettier/react",
+      "prettier/standard",
+      "plugin:flowtype/recommended"
+    ],
+    "plugins": [
+      "flow",
+      "prettier"
+    ],
+    "rules": {
+      "import/no-extraneous-dependencies": [
+        "error",
+        {
+          "devDependencies": [
+            "**/*.test.js",
+            "**/*.spec.js",
+            "**/*.stories.js"
+          ]
+        }
+      ],
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true,
+          "parser": "flow"
+        }
+      ],
+      "react/jsx-filename-extension": 0,
+      "react/destructuring-assignment": 0
+    }
   },
   "browserslist": [
     ">0.2%",
@@ -15,14 +51,39 @@
     "not op_mini all"
   ],
   "scripts": {
+    "analyze": "source-map-explorer build/static/js/main.*",
+    "check-lint": "eslint src/**/*",
+    "check-flow": "flow check",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   },
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
-    "react-scripts": "2.1.1"
+    "react-scripts": "2.1.1",
+    "source-map-explorer": "^1.6.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.1.5",
+    "@storybook/addon-actions": "^4.0.4",
+    "@storybook/addon-links": "^4.0.4",
+    "@storybook/addons": "^4.0.4",
+    "@storybook/react": "^4.0.4",
+    "babel-loader": "^8.0.4",
+    "eslint": "^5.6.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-plugin-flow": "^2.29.1",
+    "eslint-plugin-flowtype": "^3.2.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "flow-bin": "^0.86.0",
+    "prettier": "^1.15.2"
   }
 }
