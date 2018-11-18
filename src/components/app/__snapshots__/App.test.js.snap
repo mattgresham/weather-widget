@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="container"
+>
+  <Divider />
+  <div
+    className="row"
+  >
+    <div
+      className="column"
+    >
+      <Connect(Editor) />
+    </div>
+    <div
+      className="column"
+    >
+      <Connect(WeatherWidget) />
+    </div>
+  </div>
+  <p
+    className="error"
+  />
+</div>
+`;

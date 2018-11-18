@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  class="group"
+>
+  <div
+    class="container"
+  >
+    <label
+      class="label"
+      for="radio-button__metric"
+    >
+      <input
+        checked=""
+        class="element"
+        id="radio-button__metric"
+        type="radio"
+        value="metric"
+      />
+      °C
+    </label>
+  </div>
+  <div
+    class="container"
+  >
+    <label
+      class="label"
+      for="radio-button__imperial"
+    >
+      <input
+        class="element"
+        id="radio-button__imperial"
+        type="radio"
+        value="imperial"
+      />
+      °F
+    </label>
+  </div>
+</div>
+`;

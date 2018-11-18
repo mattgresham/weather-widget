@@ -1,0 +1,187 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly with a title, no wind and metric units 1`] = `
+<div
+  class="widget"
+>
+  <div
+    class="title"
+  >
+    Weather
+  </div>
+  <div
+    class="container"
+  >
+    <div
+      class="iconContainer"
+    >
+      <img
+        alt=""
+        class="icon"
+        src="https://openweathermap.org/img/w/00.png"
+      />
+    </div>
+    <div
+      class="weatherContainer"
+    >
+      <div>
+        Australia
+      </div>
+      <div
+        class="temperature"
+      >
+        10
+        <span
+          class="degree"
+        >
+          °
+        </span>
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly with a title, wind and metric units 1`] = `
+<div
+  class="widget"
+>
+  <div
+    class="title"
+  >
+    Weather
+  </div>
+  <div
+    class="container"
+  >
+    <div
+      class="iconContainer"
+    >
+      <img
+        alt=""
+        class="icon"
+        src="https://openweathermap.org/img/w/00.png"
+      />
+    </div>
+    <div
+      class="weatherContainer"
+    >
+      <div>
+        Australia
+      </div>
+      <div
+        class="temperature"
+      >
+        10
+        <span
+          class="degree"
+        >
+          °
+        </span>
+      </div>
+      <div
+        class="windContainer"
+      >
+        <span
+          class="windLabel"
+        >
+          Wind
+        </span>
+         N 10km/h
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly with imperial no data 1`] = `
+<div
+  class="widget"
+>
+  <div
+    class="title"
+  >
+    Title of widget
+  </div>
+  <div
+    class="container"
+  >
+    <div
+      class="iconContainer"
+    />
+    <div
+      class="weatherContainer"
+    >
+      <div>
+        -
+      </div>
+      <div
+        class="temperature"
+      >
+        -
+        <span
+          class="degree"
+        >
+          °
+        </span>
+      </div>
+      <div
+        class="windContainer"
+      >
+        <span
+          class="windLabel"
+        >
+          Wind
+        </span>
+         -mph
+      </div>
+    </div>
+  </div>
+</div>
+`;
+
+exports[`renders correctly with metric no data 1`] = `
+<div
+  class="widget"
+>
+  <div
+    class="title"
+  >
+    Title of widget
+  </div>
+  <div
+    class="container"
+  >
+    <div
+      class="iconContainer"
+    />
+    <div
+      class="weatherContainer"
+    >
+      <div>
+        -
+      </div>
+      <div
+        class="temperature"
+      >
+        -
+        <span
+          class="degree"
+        >
+          °
+        </span>
+      </div>
+      <div
+        class="windContainer"
+      >
+        <span
+          class="windLabel"
+        >
+          Wind
+        </span>
+         -km/h
+      </div>
+    </div>
+  </div>
+</div>
+`;

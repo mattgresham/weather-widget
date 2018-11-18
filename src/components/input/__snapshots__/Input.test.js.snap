@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<input
+  class="element"
+  placeholder="Title"
+  type="text"
+  value=""
+/>
+`;
