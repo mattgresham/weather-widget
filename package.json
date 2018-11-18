@@ -54,7 +54,7 @@
     "analyze": "source-map-explorer build/static/js/main.*",
     "check-lint": "eslint src/**/*",
     "check-flow": "flow check",
-    "start": "react-scripts start",
+    "start": "HTTPS=true react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -64,7 +64,10 @@
   "dependencies": {
     "react": "^16.6.3",
     "react-dom": "^16.6.3",
+    "react-redux": "^5.1.1",
     "react-scripts": "2.1.1",
+    "redux": "^4.0.1",
+    "redux-saga": "^0.16.2",
     "source-map-explorer": "^1.6.0"
   },
   "devDependencies": {
