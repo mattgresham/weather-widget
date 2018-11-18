@@ -8,7 +8,7 @@ type Props = {
   icon?: string,
   isWindShown: boolean,
   location?: string,
-  temperature?: number,
+  temperature?: number | '-',
   title?: string,
   units?: Units,
   wind?: string
@@ -18,7 +18,7 @@ class WeatherWidget extends Component<Props> {
   static defaultProps = {
     icon: '',
     location: '—',
-    temperature: 0,
+    temperature: '-',
     title: '—',
     units: 'metric',
     wind: '—'

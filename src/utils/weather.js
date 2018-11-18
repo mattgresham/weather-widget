@@ -35,7 +35,7 @@ const toWeatherProps = ({
   wind,
   weather
 }: CurrentWeatherResponse = {}) => ({
-  temperature: temp ? Math.round(temp) : '',
+  temperature: temp ? Math.round(temp) : '-',
   location: name || '',
   wind: wind ? toWindString(wind) : '',
   icon: weather && weather[0] ? weather[0].icon : ''

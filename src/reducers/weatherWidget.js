@@ -13,7 +13,7 @@ import type { Units } from '../types/units';
 type Weather = {
   icon: string,
   location: string,
-  temperature: number,
+  temperature: number | '-',
   wind: string
 };
 
