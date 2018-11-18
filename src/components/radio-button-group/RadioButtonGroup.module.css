@@ -1,0 +1,17 @@
+.group {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.7rem;
+}
+
+.container {
+  flex-basis: 100%;
+}
+
+.label {
+  display: flex;
+}
+
+.element {
+  margin: 3px 1rem 0 1px;
+}

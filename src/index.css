@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+  min-width: 20rem;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;

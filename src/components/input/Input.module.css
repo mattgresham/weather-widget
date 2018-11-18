@@ -1,0 +1,12 @@
+.element {
+  border-radius: 0.25rem;
+  border: 1px solid #B8B8B8;
+  font-size: 1rem;
+  padding: 0.6rem 0.9rem;
+  width: 100%;
+}
+
+.element::placeholder {
+  font-size: 1rem;
+}
+

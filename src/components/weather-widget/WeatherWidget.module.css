@@ -1,0 +1,56 @@
+.widget {
+  background-color: #FFF;
+  border-radius: 0.25rem;
+  box-shadow: 0px 4px 16px 1px rgba(0, 0, 0, 0.1);
+  padding: 2rem 2rem 1.5rem;
+}
+
+.title {
+  font-weight: bold;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.container {
+  display: flex;
+  margin: 2rem 0 0;
+}
+
+.iconContainer {
+  min-height: 113px;
+  width: 50%;
+}
+
+.weatherContainer {
+  padding: 0.6rem 0.7rem;
+  width: 50%;
+}
+
+.icon {
+  width: 100%;
+}
+
+.temperature {
+  font-size: 2.7rem;
+  font-weight: 800;
+  margin-top: 2px;
+}
+
+.degree {
+  font-size: 1.5rem;
+  vertical-align: super;
+}
+
+.windContainer {
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+  white-space: nowrap;
+}
+
+.windLabel {
+  display: inline-block;
+  font-weight: bold;
+  margin-right: 2px;
+}
