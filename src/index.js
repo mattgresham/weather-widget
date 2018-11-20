@@ -15,8 +15,10 @@ const store = createStore(
   reducers,
   compose(
     applyMiddleware(sagaMiddleware),
-    // eslint-disable-next-line no-underscore-dangle
-    window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__()
+    window.navigator.userAgent.includes('Chrome')
+      ? window.__REDUX_DEVTOOLS_EXTENSION__ && // eslint-disable-line no-underscore-dangle
+          window.__REDUX_DEVTOOLS_EXTENSION__() // eslint-disable-line no-underscore-dangle
+      : compose
   )
 );
 rootSaga(sagaMiddleware);
